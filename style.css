@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap');
-/* ========================================
-   PORTFOLIO — VISUAL IDENTITY
-   ======================================== */
 
-/* ---------- COLOR SYSTEM ---------- */
+
+/* ========================================
+   COLOR SYSTEM
+======================================== */
 
 :root {
+
     --calcaire: #F5F6F2;
     --ecume: #ECEEE8;
 
@@ -26,7 +27,9 @@
 }
 
 
-/* ---------- GENERAL ---------- */
+/* ========================================
+   RESET
+======================================== */
 
 * {
     box-sizing: border-box;
@@ -38,288 +41,428 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-/* ---------- TYPOGRAPHY ---------- */
-
 body {
+    background: var(--calcaire);
+    color: var(--encre);
+
     font-family: "Barlow", sans-serif;
     font-weight: 400;
-    line-height: 1.6;
+
+    line-height: 1.55;
 }
+
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
 
 h1,
 h2,
 h3 {
     font-family: "Barlow Condensed", sans-serif;
-    font-weight: 600;
-    line-height: 0.95;
+    font-weight: 700;
+
+    line-height: 0.9;
 }
 
 h1 {
-    font-size: clamp(4rem, 10vw, 8rem);
-    letter-spacing: -0.02em;
+    font-size: clamp(5rem, 12vw, 11rem);
+    letter-spacing: -0.035em;
 }
 
 h2 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    letter-spacing: -0.03em;
 }
 
 h3 {
-    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 p {
-    font-family: "Barlow", sans-serif;
-    font-size: 1rem;
     max-width: 700px;
 }
 
 
-/* ---------- SMALL LABELS ---------- */
-
-.label {
-    font-family: "Barlow", sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-
-/* ---------- LINKS ---------- */
+/* ========================================
+   LINKS
+======================================== */
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--terre);
-}
 
-
-/* ---------- MAIN CONTAINER ---------- */
+/* ========================================
+   CONTAINER
+======================================== */
 
 .container {
-    width: min(1200px, 90%);
+    width: min(1200px, calc(100% - 80px));
     margin: 0 auto;
 }
 
 
-/* ---------- SECTIONS ---------- */
+/* ========================================
+   HEADER
+======================================== */
 
-section {
-    padding: 100px 0;
-}
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
+    background: var(--calcaire);
 
-/* ---------- SECTION HEADER ---------- */
-
-.section-header {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 40px;
-
-    padding-bottom: 40px;
     border-bottom: 1px solid var(--sauge);
 }
 
-.section-number {
-    color: var(--terre);
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 18px 0;
 }
 
-.section-header h2 {
-    max-width: 700px;
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
 }
 
 
-/* ---------- BUTTONS ---------- */
+/* ---------- NAVIGATION ---------- */
 
-.button {
-    display: inline-block;
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
 
-    padding: 14px 24px;
+    gap: 8px;
+}
 
-    background-color: var(--foret);
-    color: var(--calcaire);
+.nav-item {
+    display: block;
 
-    font-family: "Barlow", sans-serif;
-    font-size: 0.8rem;
+    padding: 9px 15px;
+
+    border: 1px solid var(--foret);
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
     transition: 0.2s ease;
 }
 
-.button:hover {
-    background-color: var(--chlorophylle);
-    color: var(--encre);
+.nav-item:hover {
+    background: var(--foret);
+    color: var(--calcaire);
 }
 
 
-/* ---------- HERO ---------- */
+/* ========================================
+   HERO
+======================================== */
 
 .hero {
-    min-height: 90vh;
+    min-height: calc(100vh - 74px);
 
     display: flex;
     align-items: center;
 
-    background-color: var(--foret);
+    background: var(--foret);
     color: var(--calcaire);
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 80px;
+
     align-items: end;
 }
 
+.eyebrow {
+    margin-bottom: 45px;
+
+    color: var(--chlorophylle);
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
 .hero h1 {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+}
+
+.hero-main > p:last-child {
+    color: var(--sauge);
+
+    font-size: 1.1rem;
 }
 
 .hero-intro {
-    max-width: 500px;
-    color: var(--sauge);
-}
+    padding-bottom: 10px;
 
-.hero-label {
-    margin-bottom: 30px;
-    color: var(--chlorophylle);
+    font-size: 1.25rem;
 }
 
 
-/* ---------- CONTENT BLOCKS ---------- */
+/* ========================================
+   SECTIONS
+======================================== */
 
-.content-grid {
+.section {
+    padding: 120px 0;
+}
+
+.section-light {
+    background: var(--ecume);
+}
+
+.section-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
 
-    background-color: var(--sauge);
+    grid-template-columns: 220px 1fr;
+
+    gap: 80px;
 }
 
-.content-block {
-    padding: 50px;
-    background-color: var(--calcaire);
+.section-title {
+    padding-top: 10px;
 }
 
-.content-block.dark {
-    background-color: var(--foret);
-    color: var(--calcaire);
+.section-label {
+    color: var(--terre);
+
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
-.content-block.green {
-    background-color: var(--sauge);
+.section-content h2 {
+    margin-bottom: 55px;
 }
 
-.content-block.terra {
-    background-color: var(--terre);
-    color: var(--calcaire);
+.section-content > p {
+    margin-bottom: 22px;
+
+    color: var(--brume);
+
+    font-size: 1.05rem;
 }
 
 
-/* ---------- PROJECTS ---------- */
+/* ========================================
+   PROJECTS
+======================================== */
+
+.project-intro {
+    margin-bottom: 60px;
+}
+
+.project-list {
+    border-top: 1px solid var(--sauge);
+}
 
 .project {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-
-    gap: 40px;
-
-    padding: 50px 0;
+    padding: 45px 0;
 
     border-bottom: 1px solid var(--sauge);
 }
 
-.project-number {
+.project-status {
+    display: block;
+
+    margin-bottom: 15px;
+
     color: var(--terre);
 
-    font-family: "Barlow", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
+
     letter-spacing: 0.15em;
 }
 
 .project h3 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.project-description {
+.project p {
     color: var(--brume);
 }
 
 
-/* ---------- SKILLS ---------- */
+/* ========================================
+   EXPERTISE
+======================================== */
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+
+    gap: 8px;
 }
 
 .skill {
-    padding: 10px 16px;
+    padding: 11px 15px;
 
     border: 1px solid var(--foret);
 
-    font-family: "Barlow", sans-serif;
-    font-size: 0.8rem;
+    color: var(--foret);
+
+    font-size: 0.78rem;
     font-weight: 500;
+
     letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-/* ---------- FOOTER ---------- */
 
-footer {
-    padding: 60px 0;
+/* ========================================
+   CONTACT
+======================================== */
 
-    background-color: var(--encre);
+.contact {
+    padding: 0;
+
+    background: var(--foret);
     color: var(--calcaire);
 }
 
-footer .label {
+.contact-inner {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contact .section-label {
+    margin-bottom: 55px;
+
+    color: var(--chlorophylle);
+}
+
+.contact h2 {
+    margin-bottom: 35px;
+}
+
+.contact p {
     color: var(--sauge);
 }
 
 
-/* ---------- MOBILE ---------- */
+/* ========================================
+   FOOTER
+======================================== */
 
-@media (max-width: 768px) {
+footer {
+    padding: 30px 0;
 
-    section {
-        padding: 70px 0;
+    background: var(--encre);
+    color: var(--calcaire);
+
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: min(100% - 40px, 1200px);
     }
+
+
+    /* HEADER */
+
+    .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .nav-item {
+        flex: 1;
+        text-align: center;
+    }
+
+
+    /* HERO */
 
     .hero {
         min-height: auto;
+
         padding: 100px 0;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+
+        gap: 60px;
     }
 
-    .section-header {
+
+    /* SECTIONS */
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+
+        gap: 30px;
     }
 
-    .content-grid {
-        grid-template-columns: 1fr;
+    .section-content h2 {
+        margin-bottom: 40px;
     }
 
-    .content-block {
-        padding: 35px;
+
+    /* TYPOGRAPHY */
+
+    h1 {
+        font-size: clamp(4.5rem, 20vw, 8rem);
     }
 
-    .project {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 35px 0;
+    h2 {
+        font-size: clamp(3.5rem, 15vw, 6rem);
     }
+
+
+    /* CONTACT */
+
+    .contact-inner {
+        min-height: 400px;
+    }
+
 }

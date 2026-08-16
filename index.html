@@ -10,90 +10,443 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <main class="home">
+    <main>
 
-        <div class="container">
+        <!-- =========================
+             HERO
+        ========================== -->
 
-            <header class="home-header">
+        <section class="hero">
 
-                <a href="index.html" class="logo">
-                    CLARA PALCZYNSKI
-                </a>
+            <div class="container">
 
-            </header>
-
-
-            <section class="home-hero">
-
-                <div class="hero-main">
-
-                    <p class="eyebrow">
-                        Urban Planner · Project Manager · Data Analyst
-                    </p>
-
+                <div class="hero-name">
                     <h1>
                         Clara<br>
                         Palczynski
                     </h1>
-
                 </div>
 
 
-                <div class="hero-intro">
+                <p class="role">
+                    Urban Planner · Project Manager · Data Analyst
+                </p>
 
-                    <p>
-                        Exploring the connections between
-                        buildings, energy, data and cities.
-                    </p>
+
+                <div class="intro-line"></div>
+
+
+                <p class="intro">
+                    Exploring the connections between<br>
+                    buildings, energy, data and cities.
+                </p>
+
+
+                <!-- =========================
+                     NAVIGATION
+                ========================== -->
+
+                <nav class="navigation">
+
+                    <button
+                        class="nav-button"
+                        data-target="about">
+                        About Me
+                    </button>
+
+                    <button
+                        class="nav-button"
+                        data-target="approach">
+                        Approach
+                    </button>
+
+                    <button
+                        class="nav-button"
+                        data-target="projects">
+                        Projects
+                    </button>
+
+                    <button
+                        class="nav-button"
+                        data-target="expertise">
+                        Expertise
+                    </button>
+
+                    <button
+                        class="nav-button"
+                        data-target="contact">
+                        Contact
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTENT SECTIONS
+        ========================== -->
+
+        <div class="content-wrapper">
+
+
+            <!-- ABOUT ME -->
+
+            <section
+                id="about"
+                class="content-section">
+
+                <div class="container">
+
+                    <span class="section-label">
+                        About Me
+                    </span>
+
+                    <div class="section-text">
+
+                        <h2>
+                            Urban planner & project manager
+                        </h2>
+
+                        <p>
+                            I am an urban planner and project manager
+                            currently developing my skills in data analysis.
+                        </p>
+
+                        <p>
+                            My professional interests lie at the
+                            intersection of buildings, energy, data
+                            and urban development.
+                        </p>
+
+                    </div>
 
                 </div>
 
             </section>
 
 
-            <nav class="home-navigation">
+            <!-- APPROACH -->
 
-                <a href="profile.html" class="home-nav-item">
-                    Profile
-                </a>
+            <section
+                id="approach"
+                class="content-section">
 
-                <a href="approach.html" class="home-nav-item">
-                    Approach
-                </a>
+                <div class="container">
 
-                <a href="projects.html" class="home-nav-item">
-                    Projects
-                </a>
+                    <span class="section-label">
+                        Approach
+                    </span>
 
-                <a href="expertise.html" class="home-nav-item">
-                    Expertise
-                </a>
+                    <div class="section-text">
 
-                <a href="contact.html" class="home-nav-item">
-                    Contact
-                </a>
+                        <h2>
+                            Connecting territories, buildings and data
+                        </h2>
 
-            </nav>
+                        <p>
+                            I am interested in understanding how data
+                            can support better decisions around
+                            buildings, energy and territorial development.
+                        </p>
 
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+
+            <section
+                id="projects"
+                class="content-section">
+
+                <div class="container">
+
+                    <span class="section-label">
+                        Projects
+                    </span>
+
+                    <div class="section-text">
+
+                        <h2>
+                            Selected projects
+                        </h2>
+
+                        <p>
+                            Data analysis projects developed around
+                            energy, buildings and territories.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- EXPERTISE -->
+
+            <section
+                id="expertise"
+                class="content-section">
+
+                <div class="container">
+
+                    <span class="section-label">
+                        Expertise
+                    </span>
+
+                    <div class="section-text">
+
+                        <h2>
+                            Skills & areas of interest
+                        </h2>
+
+                        <div class="skills">
+
+                            <span>Urban Planning</span>
+                            <span>Project Management</span>
+                            <span>Home Improvement</span>
+                            <span>Data Analysis</span>
+                            <span>Energy & Buildings</span>
+                            <span>Territorial Issues</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT -->
+
+            <section
+                id="contact"
+                class="content-section">
+
+                <div class="container">
+
+                    <span class="section-label">
+                        Contact
+                    </span>
+
+                    <div class="section-text">
+
+                        <h2>
+                            Let's connect
+                        </h2>
+
+                        <p>
+                            More information and contact details coming soon.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
 
         </div>
 
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <div class="container">
+        <div class="container footer-inner">
 
-            <span>
-                CLARA PALCZYNSKI · 2026
-            </span>
+            <p class="copyright">
+                © 2026 Clara Palczynski
+            </p>
+
+
+            <!-- Simple urban landscape -->
+
+            <svg
+                class="cityscape"
+                viewBox="0 0 420 120"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+
+                <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5">
+
+                    <!-- ground -->
+
+                    <line
+                        x1="10"
+                        y1="105"
+                        x2="410"
+                        y2="105" />
+
+
+                    <!-- building 1 -->
+
+                    <rect
+                        x="70"
+                        y="55"
+                        width="45"
+                        height="50" />
+
+                    <line x1="80" y1="65" x2="80" y2="72" />
+                    <line x1="92" y1="65" x2="92" y2="72" />
+                    <line x1="104" y1="65" x2="104" y2="72" />
+
+                    <line x1="80" y1="80" x2="80" y2="87" />
+                    <line x1="92" y1="80" x2="92" y2="87" />
+                    <line x1="104" y1="80" x2="104" y2="87" />
+
+
+                    <!-- tall building -->
+
+                    <rect
+                        x="125"
+                        y="25"
+                        width="55"
+                        height="80" />
+
+                    <line x1="137" y1="37" x2="137" y2="44" />
+                    <line x1="151" y1="37" x2="151" y2="44" />
+                    <line x1="165" y1="37" x2="165" y2="44" />
+
+                    <line x1="137" y1="52" x2="137" y2="59" />
+                    <line x1="151" y1="52" x2="151" y2="59" />
+                    <line x1="165" y1="52" x2="165" y2="59" />
+
+                    <line x1="137" y1="67" x2="137" y2="74" />
+                    <line x1="151" y1="67" x2="151" y2="74" />
+                    <line x1="165" y1="67" x2="165" y2="74" />
+
+                    <line x1="137" y1="82" x2="137" y2="89" />
+                    <line x1="151" y1="82" x2="151" y2="89" />
+                    <line x1="165" y1="82" x2="165" y2="89" />
+
+
+                    <!-- small building -->
+
+                    <rect
+                        x="195"
+                        y="72"
+                        width="38"
+                        height="33" />
+
+
+                    <!-- central building -->
+
+                    <rect
+                        x="245"
+                        y="45"
+                        width="52"
+                        height="60" />
+
+                    <line x1="257" y1="56" x2="257" y2="63" />
+                    <line x1="270" y1="56" x2="270" y2="63" />
+                    <line x1="283" y1="56" x2="283" y2="63" />
+
+                    <line x1="257" y1="72" x2="257" y2="79" />
+                    <line x1="270" y1="72" x2="270" y2="79" />
+                    <line x1="283" y1="72" x2="283" y2="79" />
+
+
+                    <!-- tower -->
+
+                    <rect
+                        x="310"
+                        y="15"
+                        width="48"
+                        height="90" />
+
+                    <line x1="322" y1="28" x2="322" y2="35" />
+                    <line x1="335" y1="28" x2="335" y2="35" />
+                    <line x1="348" y1="28" x2="348" y2="35" />
+
+                    <line x1="322" y1="44" x2="322" y2="51" />
+                    <line x1="335" y1="44" x2="335" y2="51" />
+                    <line x1="348" y1="44" x2="348" y2="51" />
+
+                    <line x1="322" y1="60" x2="322" y2="67" />
+                    <line x1="335" y1="60" x2="335" y2="67" />
+                    <line x1="348" y1="60" x2="348" y2="67" />
+
+                    <line x1="322" y1="76" x2="322" y2="83" />
+                    <line x1="335" y1="76" x2="335" y2="83" />
+                    <line x1="348" y1="76" x2="348" y2="83" />
+
+
+                    <!-- trees -->
+
+                    <circle cx="45" cy="88" r="13" />
+                    <line x1="45" y1="101" x2="45" y2="105" />
+
+                    <circle cx="385" cy="89" r="13" />
+                    <line x1="385" y1="102" x2="385" y2="105" />
+
+                </g>
+
+            </svg>
 
         </div>
 
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const buttons =
+            document.querySelectorAll(".nav-button");
+
+        const sections =
+            document.querySelectorAll(".content-section");
+
+
+        buttons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const target =
+                    document.getElementById(
+                        button.dataset.target
+                    );
+
+
+                sections.forEach(section => {
+                    section.classList.remove("active");
+                });
+
+
+                target.classList.add("active");
+
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            });
+
+        });
+
+    </script>
 
 </body>
 

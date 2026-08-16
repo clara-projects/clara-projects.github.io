@@ -1,1 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap');
+/* ========================================
+   PORTFOLIO — VISUAL IDENTITY
+   ======================================== */
 
+/* ---------- COLOR SYSTEM ---------- */
+
+:root {
+    --calcaire: #F5F6F2;
+    --ecume: #ECEEE8;
+
+    --encre: #1C211A;
+    --mousse: #182C1F;
+
+    --foret: #3D5E45;
+    --fougere: #6B9170;
+    --sauge: #A8BEA8;
+
+    --chlorophylle: #4AE08B;
+    --signal: #A3F5C8;
+
+    --terre: #B85C38;
+    --sienne: #D4855E;
+
+    --brume: #7A9E86;
+}
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* ---------- TYPOGRAPHY ---------- */
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    line-height: 0.95;
+}
+
+h1 {
+    font-size: clamp(4rem, 10vw, 8rem);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+h3 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    max-width: 700px;
+}
+
+
+/* ---------- SMALL LABELS ---------- */
+
+.label {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+/* ---------- LINKS ---------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--terre);
+}
+
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    padding: 100px 0;
+}
+
+
+/* ---------- SECTION HEADER ---------- */
+
+.section-header {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--sauge);
+}
+
+.section-number {
+    color: var(--terre);
+}
+
+.section-header h2 {
+    max-width: 700px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: var(--foret);
+    color: var(--calcaire);
+
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    transition: 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--chlorophylle);
+    color: var(--encre);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--foret);
+    color: var(--calcaire);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: end;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+}
+
+.hero-intro {
+    max-width: 500px;
+    color: var(--sauge);
+}
+
+.hero-label {
+    margin-bottom: 30px;
+    color: var(--chlorophylle);
+}
+
+
+/* ---------- CONTENT BLOCKS ---------- */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+
+    background-color: var(--sauge);
+}
+
+.content-block {
+    padding: 50px;
+    background-color: var(--calcaire);
+}
+
+.content-block.dark {
+    background-color: var(--foret);
+    color: var(--calcaire);
+}
+
+.content-block.green {
+    background-color: var(--sauge);
+}
+
+.content-block.terra {
+    background-color: var(--terre);
+    color: var(--calcaire);
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.project {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+
+    gap: 40px;
+
+    padding: 50px 0;
+
+    border-bottom: 1px solid var(--sauge);
+}
+
+.project-number {
+    color: var(--terre);
+
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+}
+
+.project h3 {
+    margin-bottom: 20px;
+}
+
+.project-description {
+    color: var(--brume);
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    padding: 10px 16px;
+
+    border: 1px solid var(--foret);
+
+    font-family: "Barlow", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 60px 0;
+
+    background-color: var(--encre);
+    color: var(--calcaire);
+}
+
+footer .label {
+    color: var(--sauge);
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 100px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section-header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-block {
+        padding: 35px;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 35px 0;
+    }
+}
